@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "./build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "label": "debug",
+            "type": "shell",
+            "command": "./debug.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "label": "prepare",
+            "type": "shell",
+            "command": "../tests/prepare.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "../tests/run.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "label": "cleanup",
+            "type": "shell",
+            "command": "../tests/cleanup.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+    ]
+}
